@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7960 Final Project</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./detail2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div style="text-align: right">
+  <a href="index.html" class="section-subtitle" style="text-align: right;margin-right: 20px;margin-top: 10px">
+    close[x]
+  </a>
+</div>
+<div class="blog-post">
+  <div class="blog-hero"></div>
+  <article style="background-color: #08196c">
+
+    <div class="blog-content ">
+      <summary class="permanent">
+        <h3 style="color: #FFFFFF;margin-bottom: 20px;margin-top:10px;line-height: 52px;">Deep learning algorithm predicts diabetic retinopathy progression in individual patients</h3>
+       </summary>
+      <p><strong>Abstract</strong>
+        The global burden of diabetic retinopathy (DR) continues to worsen and DR remains a leading cause of vision loss worldwide. Here, we describe an algorithm to predict DR progression by means of deep learning (DL), using as input color fundus photographs (CFPs) acquired at a single visit from a patient with DR. The proposed DL models were designed to predict future DR progression, defined as 2-step worsening on the Early Treatment Diabetic Retinopathy Diabetic Retinopathy Severity Scale, and were trained against DR severity scores assessed after 6, 12, and 24 months from the baseline visit by masked, well-trained, human reading center graders. The performance of one of these models (prediction at month 12) resulted in an area under the curve equal to 0.79. Interestingly, our results highlight the importance of the predictive signal located in the peripheral retinal fields, not routinely collected for DR assessments, and the importance of microvascular abnormalities. Our findings show the feasibility of predicting future DR progression by leveraging CFPs of a patient acquired at a single visit. Upon further development on larger and more diverse datasets, such an algorithm could enable early diagnosis and referral to a retina specialist for more frequent monitoring and even consideration of early intervention. Moreover, it could also improve patient recruitment for clinical trials targeting DR.</p>
+    </div>
+    <div class="blog-img">
+      <div class="blog-img-caption"></div>
+    </div>
+   
+    <div class="blog-content">
+      <p> <strong>Discussion</strong>
+        This work demonstrates the feasibility of developing a DL algorithm to identify patients who will experience DR worsening by two or more ETDRS DRSS steps over the next 2 years, based solely on CFPs acquired at a single visit. Currently, it is only possible to approximate progression risk for groups of patients with similar signs and symptoms on the basis of their assessed DR severity level, but it is not possible to accurately predict the course of DR in an individual patient.20 Previous data from ETDRS studies demonstrated that DR is a slowly progressing disease and that there is an increasing risk of DR worsening and vision-threatening events as DR severity increases.20 For example, using the traditional manual grader assessment, a patient with moderately severe non-proliferative DR (NPDR) will have an ~20% risk, whereas a patient with severe NPDR will have an ~50% risk of progressing to proliferative DR (PDR) within 1 year.20 However, it is not know which individual patients belong to the subsets of fast versus slow progressors. This type of individual prediction can be achieved by means of the DL algorithms described in this paper.
+
+A second crucial finding of this study was that any imaging-based diagnostic/predictive AI tool for DR should contemplate the inspection of both central and peripheral retina, instead of being limited to the use of CFPs centered around the fovea or optic nerve (F2, in the traditional ETDRS 7-field photography).15,16,17,18,19 Moreover, lateral fields may contain predictive signs of DR worsening before the pathology has affected the macula, allowing for prompt referral and, eventually, timely treatment before vision loss occurs. Coupling algorithms such as the one described here with more recent imaging technologies, such as ultrawide field (UWF) photography, might enable the identification of fast DR progressors even earlier in their disease course. The non-mydriatic UWF CFPs28,29,30 were recently validated for DR severity assessments and have the advantage of capturing a view of 200 degrees of the retina with less time and effort compared with the standard 7-field CFP, while providing good to excellent agreement in determining DR severity.29,30 Part of our algorithm validation and expansion strategy is to guarantee that the described algorithm will be capable of operating on UWF CFPs as well.
+
+      </p><p>An inherent limitation of the present work is that our DCNNs have been developed and evaluated on two large, identically designed, sham-controlled, double-masked, phase 3 clinical trials (RIDE [NCT00473382] and RISE [NCT00473330]).31 The advantage of using clinical trial data is the availability of high-quality standardized imaging formats and processes as well as assessments by masked experts at a centralized reading center. However, this means that, at this time, our work is only applicable to clinical trial populations within a similar range of pre-specified eligibility criteria. Therefore, validation with datasets acquired in the real world will be essential to ensure that these results are reproducible and applicable to the broader DR population; the authors are already tackling this issue. The great advantage of the dataset at our disposal is that it contains a representation of patients across all levels of DR severity (see the distribution of RIDE/RISE patients with respect to the ETDRS DRSS overlaid with the number of 2-step DR progressors in Supplementary Fig. 1). This was key to testing the algorithm reliability across a diverse DR population. To summarize, the following aspects represent crucial limitations of the presented work: (a) relatively small patient population (~530 patients); (b) patient population fulfilling the eligibility criteria of the RIDE and RISE clinical trials, thus not representing the real world population of patients with diabetes; (c) lack of an external validation set; and (d) limited interpretability of the overall prediction models due to the use of DCNN pillars to separately process CFP fields of view. Another potential limitation of the current analyses was the definition of DR progression. The definition we used is based on the clinically relevant magnitude of step-change on the ETDRS DRSS, which is not commonly used in the clinic. Although this scale was designed based on the correlation with increasing risk of vision loss and has been validated and accepted by regulators around the world, our next step is to explore the feasibility of an algorithm that predicts vision loss directly.
+
+Our work represents a step forward in the application of AI to the field of ophthalmology.
+</p>
+<p>
+The DL modeling presented here differs from previously mentioned studies which either required multiple visits, did not employ ML, or focused on current DR severity diagnosis instead of prediction of the future. Additionally, as highlighted before, peripheral CFP fields have not been used in most of the previous ML and DL approaches dedicated to DR diagnostic development.15,16,17,18,19
+
+Our findings suggest that deployment of a predictive DR progression algorithm would enable early identification of patients at highest risk of vision loss, allowing timely referral to retina specialists and potential initiation of treatment before irreversible vision loss occurs. In the context of the global diabetes epidemic, new screening tools could have a substantial socioeconomic impact on the healthcare system. The federal savings are projected to reach $624.0 million annually in the United States alone, if we can deploy tools that enable recommended eye screening and ophthalmic care for all diabetes patients.32 However, these estimates are based on the ability to expand diagnosis across members of the diabetes population currently lacking access to medical care. To our knowledge, nobody has yet performed an evaluation of cost savings based on predictive screening, which would identify individuals who require immediate follow up and possible early intervention due to impeding near-future progression. Deployment of a predictive algorithm represents therefore an important conceptual leap for the efficient triage of patients at high risk of vision-threatening DR complications and a step towards a personalized approach to medicine, what it also envisaged as “precision medicine.”
+
+Moreover, the identification of fast DR-progressing patients through a predictive DR progression algorithm would have the potential to support the development of new treatments targeting patients with mild and moderate NPDR. Clinical trials based on the traditional endpoint of DR improvement/worsening are considered prohibitively expensive due to size and/or duration. By enriching the clinical trial population with fast DR-progressing individuals, such an AI-based recruitment strategy would increase the chances of success for clinical trials of novel drugs designed to address the unmet need of those members of the early DR population at the greatest risk of progression and vision loss. This is particularly important considering the rising global prevalence of DR and its potential impact on healthcare systems and society.
+      </p>
+      <p>
+        Arcadu, F., Benmansour, F., Maunz, A. et al. Deep learning algorithm predicts diabetic retinopathy progression in individual patients. npj Digit. Med. 2, 92 (2019). https://doi.org/10.1038/s41746-019-0172-3
+      </p>
+    </div>
+    <div class="blog-img2">
+      <div class="blog-img-caption"></div>
+    </div>
+  </article>
+</div>
+</body>
+
+</html>
